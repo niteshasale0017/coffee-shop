@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		#navbar-blog
+		{
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+			font-family: Arquitecta-Black;
+			font-size: .6875rem;
+			background-color: #8FBC8F;
+		}
+		
+		.paragraph-text{
+			font-family: Arquitecta-Black;
+			font-size: 1rem;
+		}
+		#image-aeropress{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/26.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+		#image-cascara{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/25.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+		#image-chemex{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/27.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+		#image-size{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/29.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+		#image-french{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/30.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+		#image-pourover{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/31.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+
+		#image-stovetop{
+			font-family: Arquitecta-Black;
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/32.JPG');
+			background-position:center;
+			background-size:cover;
+			background-attachment:fixed;
+			width:100%;
+			height:70vh;
+		}
+		.aero-li
+		{
+			
+		  	font-family: Arquitecta-Black;
+			font-size: 1rem;
+		}
+		.aero-ul 
+		{
+		  	list-style: none;
+		}
+
+		.aero-li::before {
+			
+			 content: "\2022";
+		  color:#8FBC8F;
+		  font-weight: bold;
+		  display: inline-block; 
+		  width: 1em;
+		  margin-left: -1em;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+
+			$(".aeropress-item").show();
+			$(".cascara-item").hide();
+			$(".chemex-item").hide();
+			$(".size-item").hide();
+			$(".french-item").hide();
+			$(".pourover-item").hide();
+			$(".stovetop-item").hide();
+
+			$("#aeropress-btn").click(function(){
+				$(".aeropress-item").show();
+				$(".cascara-item").hide();
+				$(".chemex-item").hide();
+				$(".size-item").hide();
+				$(".french-item").hide();
+				$(".pourover-item").hide();
+				$(".stovetop-item").hide();				
+			});
+
+			$("#cascara-btn").click(function(){
+				$(".aeropress-item").hide();
+				$(".cascara-item").show();
+				$(".chemex-item").hide();
+				$(".size-item").hide();
+				$(".french-item").hide();
+				$(".pourover-item").hide();
+				$(".stovetop-item").hide();				
+			});
+
+
+			$("#chemex-btn").click(function(){
+				$(".aeropress-item").hide();
+				$(".cascara-item").hide();
+				$(".chemex-item").show();
+				$(".size-item").hide();
+				$(".french-item").hide();
+				$(".pourover-item").hide();
+				$(".stovetop-item").hide();				
+			});
+
+
+			$("#size-btn").click(function(){
+				$(".aeropress-item").hide();
+				$(".cascara-item").hide();
+				$(".chemex-item").hide();
+				$(".size-item").show();
+				$(".french-item").hide();
+				$(".pourover-item").hide();
+				$(".stovetop-item").hide();				
+			});
+
+			$("#french-btn").click(function(){
+				$(".aeropress-item").hide();
+				$(".cascara-item").hide();
+				$(".chemex-item").hide();
+				$(".size-item").hide();
+				$(".french-item").show();
+				$(".pourover-item").hide();
+				$(".stovetop-item").hide();				
+			});
+
+			$("#pourover-btn").click(function(){
+				$(".aeropress-item").hide();
+				$(".cascara-item").hide();
+				$(".chemex-item").hide();
+				$(".size-item").hide();
+				$(".french-item").hide();
+				$(".pourover-item").show();
+				$(".stovetop-item").hide();				
+			});
+
+			$("#stovetop-btn").click(function(){
+				$(".aeropress-item").hide();
+				$(".cascara-item").hide();
+				$(".chemex-item").hide();
+				$(".size-item").hide();
+				$(".french-item").hide();
+				$(".pourover-item").hide();
+				$(".stovetop-item").show();				
+			});
+
+
+
+		});
+	</script>
+		<div id="header"></div>
+
+
+		<div class="container">
+			<div class="row">
+				<nav class="navbar navbar-expand-sm text-uppercase col-sm-12 col-lg-12 .col-12" id="navbar-blog">
+						<button class="navbar-toggler" data-target="#picon" data-toggle="collapse" ><i class="fa fa-bars" arial-hidden="true"></i></button>
+						<div class="collapse navbar-collapse navbar-right" id="picon">
+							<ul class="navbar-nav mx-4">
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="aeropress-btn">aeropress</a>
+								</li>
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="cascara-btn">cascara</a>
+								</li>
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="chemex-btn">chemex</a>
+								</li>
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="size-btn">coffee grind size</a>
+								</li>
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="french-btn">french press</a>
+								</li>
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="pourover-btn">pourover</a>
+								</li>
+								<li class="nav-item mx-4">
+									<a class="nav-link" href="#"  id="stovetop-btn">stovetop</a>
+								</li>
+							</ul>
+						</div>
+				</nav>
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center aeropress-item" id="image-aeropress">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 bg-light aeropress-item"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 bg-light aeropress-item" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: AEROPRESS</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							<h5 class="font-weight-bold">What you’ll need</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">14g medium-fine grind coffee</li>
+								<li class="aero-li">200g filtered water heated to 195-205°F (plus more for rinsing)</li>
+								<li class="aero-li">Aeropress</li>
+								<li class="aero-li">Scale</li>
+								<li class="aero-li">Timer</li>
+								<li class="aero-li">Spoon</li>
+							</ul><br>
+
+							<h5 class="font-weight-bold">Method</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Pre-heat Aeropress and rinse filter paper.</li>
+								<li class="aero-li">Add 14g freshly ground coffee to inverted Aeropress.</li>
+								<li class="aero-li">Start timer.</li>
+								<li class="aero-li">Add 100g of water to the Aeropress and stir 5 times.</li>
+								<li class="aero-li">Add remaining 100g of water.</li>
+								<li class="aero-li">At 1 minute, flip and take 30 seconds to plunge.</li>
+								<li class="aero-li">Adjust grind size to suit desired strength<br>
+								Caution: When inverting the Aeropress, be sure to have a firm grip on both sections.</li>
+							</ul>
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 bg-light aeropress-item"></div>
+
+
+
+
+
+
+
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center cascara-item" id="image-cascara">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 cascara-item bg-light"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 cascara-item bg-light" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: CASCARA</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							<p class="paragraph-text">Considered a powerful superfood, cascara is rich in flavanols (a type of antioxidant best known for its support of the cardiovascular and nervous systems) and high in fibre. It’s also relatively low in caffeine compared to your average cup of coffee.</p><br>
+							<p class="paragraph-text">Campos Cascara is organic, eco-friendly and comes from a place truly close to our hearts. Enjoy!</p><br>
+							<h5 class="font-weight-bold">What you'll need</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">10g Campos Cascara</li>
+								<li class="aero-li">300ml of filtered water</li>
+								<li class="aero-li">Plunger or teapot</li>
+								<li class="aero-li">Spoon</li>
+							</ul><br>
+
+							<h5 class="font-weight-bold">Method</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Place 10g of cáscara coffee cherries in a plunger or teapot</li>
+								<li class="aero-li">Boil water to approximately 195°F and pour over cáscara</li>
+								<li class="aero-li">Allow to infuse for 3-5 minutes</li>
+								<li class="aero-li">Give it a good stir with a spoon</li>
+								<li class="aero-li">Serve into cups or glasses, leaving cherries behind in your plunger or teapot</li>
+							</ul>
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 cascara-item bg-light"></div>
+
+
+
+
+
+
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center chemex-item" id="image-chemex">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 chemex-item bg-light"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 chemex-item bg-light" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: CHEMEX</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							
+							<h5 class="font-weight-bold">What you'll need</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">45g medium grind coffee</li>
+								<li class="aero-li">700g filtered water heated to 195-205°F (plus more for rinsing)</li>
+								<li class="aero-li">6 cup Chemex</li>
+								<li class="aero-li">Scale</li>
+								<li class="aero-li">Timer</li>
+								<li class="aero-li">Spoon</li>
+							</ul><br>
+
+							<h5 class="font-weight-bold">Method</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Fold filter paper and place in Chemex with 3 fold side closest to the spout.</li>
+								<li class="aero-li">Thoroughly rinse the paper filter with hot water.</li>
+								<li class="aero-li">Pour water out of Chemex without removing filter paper.</li>
+								<li class="aero-li">Add 45g of freshly ground coffee to Chemex and shake to settle.</li>
+								<li class="aero-li">Place Chemex on scale and zero.</li>
+								<li class="aero-li">Start timer.</li>
+								<li class="aero-li">Add 100g of water. Allow to bloom then gently stir to evenly saturate.</li>
+								<li class="aero-li">Pouring slowly in circles, add 300g of water.</li>
+								<li class="aero-li">Allow 30 seconds to brew.</li>
+								<li class="aero-li">Add final 300g of water.</li>
+								<li class="aero-li">Adjust grind size to achieve total brew time of 4-5 minutes.</li>
+							</ul>
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 chemex-item bg-light"></div>
+
+
+
+					
+
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center size-item" id="image-size">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 size-item bg-light"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 size-item bg-light" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: COFFEE GRIND SIZE</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							<p class="paragraph-text"><i>A quick look at the world of grinding coffee.</i></p><br>
+							
+							<h5 class="font-weight-bold">Whole Beans</h5>
+							<p class="paragraph-text">The best way to purchase your coffee! Grind it fresh as require</p><br>
+
+							<h5 class="font-weight-bold">Aeropress</h5>
+							<p class="paragraph-text">This grind is fine and best for the Aeropress; a device where coffee is steeped and then forced through a filter by pressing the plunger through the tube. It is popular for making single cup filter coffee.</p><br>
+
+							<h5 class="font-weight-bold">Cold Drip</h5>
+							<p class="paragraph-text">This grind is coarse-ground. Cold Drip is a process where beans are soaked in water for a prolonged period of time, usually for several hours. The water is normally kept at room temperature or can be chilled.</p><br>
+
+							<h5 class="font-weight-bold">Espresso (Commercial)</h5>
+							<p class="paragraph-text">This grind is most suitable for higher-end machines. These machines are usually valued at $1000+</p><br>
+
+							<h5 class="font-weight-bold">Espresso (Home)</h5>
+							<p class="paragraph-text">This grind is suitable for most domestic espresso machines.</p><br>
+
+							<h5 class="font-weight-bold">Filter</h5>
+							<p class="paragraph-text">This grind is suitable for both single cup pour over filters, or bulk brewers and drip machines</p><br>
+
+							<h5 class="font-weight-bold">French Press</h5>
+							<p class="paragraph-text">This grind is suitable for French Press.</p><br>
+
+							<h5 class="font-weight-bold">Stovetop</h5>
+							<p class="paragraph-text">This grind is suitable for the ‘screw together’ stovetop espresso maker, also known as a mocca pot.</p><br>
+
+
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 size-item bg-light"></div>
+
+
+
+
+
+					
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center french-item" id="image-french">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 bg-light french-item"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 bg-light french-item" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: FRENCH PRESS</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							<h5 class="font-weight-bold">What you’ll need</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">60g coarse grind coffee</li>
+								<li class="aero-li">1000g filtered water heated to 194-204°F</li>
+								<li class="aero-li">8 Cup French press</li>
+								<li class="aero-li">Spoon</li>
+								
+							</ul><br>
+
+							<h5 class="font-weight-bold">Method</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Add coffee to French press.</li>
+								<li class="aero-li">Pour water over grounds ensuring to evenly soak and to form a crust.</li>
+								<li class="aero-li">Allow to steep for 5 minutes.</li>
+								<li class="aero-li">Slowly plunge and serve.</li>
+								<li class="aero-li">(Pro Tip). After steeping, use the back of a spoon to break the surface of the formed crust with 5<br>
+								 strokes – avoid over stirring. Peel away excess grounds for a cleaner cup and less sludge.</li>
+								
+							</ul>
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 bg-light french-item"></div>
+
+
+
+
+
+
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center pourover-item" id="image-pourover">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 bg-light pourover-item"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 bg-light pourover-item" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: pourover</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							<h5 class="font-weight-bold">What you’ll need</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">14g medium grind coffee</li>
+								<li class="aero-li">250g filtered water heated to 195-205°F (plus more for rinsing)</li>
+								<li class="aero-li">Scale</li>
+								<li class="aero-li">Timer</li>
+								<li class="aero-li">Brewer</li>
+								<li class="aero-li">Server</li>
+								<li class="aero-li">Spoon</li>
+							</ul><br>
+
+							<h5 class="font-weight-bold">Method</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Fold filter paper at the seam, place in brewer.</li>
+								<li class="aero-li">Place brewer on the server, thoroughly rinse the paper filter with hot water (empty afterwards).</li>
+								<li class="aero-li">Add 14g freshly ground coffee to the brewer and shake to settle.</li>
+								<li class="aero-li">Place brewer and server on scale and zero.</li>
+								<li class="aero-li">Start timer.</li>
+								<li class="aero-li">Add 40g of water. Allow to bloom then gently stir to evenly saturate.</li>
+								<li class="aero-li">Pouring slowly in circles, add 70g of water every 30 seconds up to the 250g total.</li>
+								<li class="aero-li">After final 70g of water, gently tap the brewer to settle the grinds evenly in the base.</li>
+								<li class="aero-li">Adjust grind size to achieve a total brew time of 2.5 minutes.</li>
+							</ul>
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 bg-light pourover-item"></div>
+
+
+
+
+
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center stovetop-item" id="image-stovetop">
+						
+					</div>
+					<div class="col-sm-3 col-lg-3 .col-12 stovetop-item bg-light"></div>
+				
+					<div class="col-sm-6 col-lg-6 .col-12 text-justify pt-5 stovetop-item bg-light" id="">
+							<h3 class="text-uppercase font-weight-bold font-italic">HOW TO BREW: stovetop</h3>
+							<p class="paragrapg-text text-success">BREW GUIDES</p><br>
+							
+							<h5 class="font-weight-bold">What you'll need</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Medium fine grind coffee</li>
+								<li class="aero-li">Hot filtered water</li>
+								<li class="aero-li">Stovetop</li>
+							</ul><br>
+
+							<h5 class="font-weight-bold">Method</h5>
+							<ul class="aero-ul">
+								<li class="aero-li">Use a ratio of 200g of coffee per litre of water.</li>
+								<li class="aero-li">Freshly and finely ground coffee. Place in the basket without pressing it down.</li>
+								<li class="aero-li">Fill bottom section of brewer with hot water (be sure not to cover any safety valves).</li>
+								<li class="aero-li">Assemble brewer.</li>
+								<li class="aero-li">Place on a low-medium heat with lid open.</li>
+								<li class="aero-li">When the brew is complete, immediately turn off heat and remove stovetop to stop brewing.</li>
+								<li class="aero-li">(Pro Tip). To avoid extracting too much bitterness that comes from the final stage of the<br>
+								 extraction, quickly rinse the outside of the brewer under cold water after removing from heat.</li>
+							</ul>
+					</div>
+				
+					<div class="col-sm-3 col-lg-3 .col-12 stovetop-item bg-light"></div>
+
+
+
+
+
+			</div>
+		</div>
+
+		<div id="footer"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		#navbar-blog
+		{
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+			font-family: Arquitecta-Black;
+			font-size: .6875rem;
+			height:10vh;
+			background-color: #8FBC8F;
+		}
+		#previous,#middel,#next{
+			margin-top:4vh;
+			background-color: transparent;
+			border: none;
+			width:100%;
+			font-size: .6875rem;
+			text-transform: uppercase;
+			border: 1px solid red;
+		}
+		#aeropress-img{
+			background-image:url('coffee/26.JPG');
+			background-size:cover;
+			background-position: center;
+			background-attachment: fixed;
+			width:100%;
+			height:70vh;
+		}
+	</style>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+
+		//declearing the arrays image array and heading array
+
+		var images = ['coffee/26.JPG','coffee/25.JPG','coffee/27.JPG','coffee/29.JPG','coffee/30.JPG','coffee/31.JPG','coffee/32.JPG',];
+		var images_heading = ['how to brew: aeropress','how to brew: cascara','how to brew: chemex','how to brew: coffee grind size','how to brew: french press','how to brew: pourover','how to brew: stovetop'];
+		
+		//on mouse over privous and next div
+		
+		function prefunc()
+		{
+		 
+			var pre = document.getElementById('middel').value;
+			if(pre=="")
+			{
+				document.getElementById('previous').innerHTML='this is stating page';
+			}
+			else
+			{
+				var pre_head = document.getElementById('middel').value;
+				for(var i=0;i<7;i++)
+				{
+					if(pre_head==images_heading[i])
+					{
+						document.getElementById('previous').value=images_heading[i-1];
+					}
+				}
+			}
+		}
+		function nextfunc()
+		{
+			
+			var next_head = document.getElementById('middel').value;
+			if(next_head==images_heading[6])
+			{
+				document.getElementById('next').innerHTML='no more content';
+			}
+			else if(next_head=="")
+			{
+				document.getElementById('next').innerHTML=images_heading[1];
+			}
+			else
+			{	
+				for(var i=0;i<7;i++)
+				{
+					
+					if(next_head==images_heading[i])
+					{
+						document.getElementById('next').innerHTML=images_heading[i+1];
+											
+					}
+				
+				}
+			}
+			
+			
+		}
+
+		
+
+		// on mouse out event previous and next div
+		
+
+		function preout()
+		{
+			document.getElementById('previous').innerHTML=value='previous';
+		}
+		function nextout()
+		{
+			document.getElementById('next').innerHTML=value='next';
+		}
+
+
+		//onc click event on the previous and next div
+
+		function preclick()
+		{
+			var middel = document.getElementById('middel').value;
+			if(middel=="")
+			{
+				document.getElementById('middel').innerHTML='this is first page';
+			}
+			for(var i=0;i>7;i++)
+			{
+				if(middel==images_heading[i])
+				{
+					document.getElementById('middel').value=images_heading[i-1];
+				}
+			}
+		}
+
+		function nextclick()
+		{
+			var middel = document.getElementById('middel').value;
+			if(middel=="")
+			{
+				document.getElementById('middel').innerHTML=value=images_heading[1];
+			}
+			for(var i=0;i>7;i++)
+			{
+				if(middel==images_heading[i])
+				{
+					document.getElementById('middel').value=images_heading[i+1];
+				}
+			}
+		}
+
+
+
+	</script>
+	----------------------------------------header-----------------------------------------------------------
+	<div id="header"></div>
+	----------------------------------------body-------------------------------------------------------------
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-lg-12 .col-12 text-uppercase mx-auto"id="navbar-blog">
+				<div class="row">
+					<div class="col-sm-3 col-lg-3 .col-12 text-justify text-center">
+						<button value=""id="previous"onmouseover="prefunc();"onmouseout="preout();" onclick="preclick();"placeholder="prevoius"readonly>previous</button>
+					</div>
+					
+					<div class="col-sm-6 col-lg-6 .col-12 text-capitalize text-justify text-center">
+						<button value=""id="middel" placeholder="middel"readonly>how to brew: aeropress</button> 
+					</div>
+					
+					<div class="col-sm-3 col-lg-3 .col-12 text-justify text-center">
+						<button value=""id="next" onmouseover="nextfunc();"onmouseout="nextout();"onclick="nextclick();"placeholder="next">next</button>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-sm-12 col-lg-12 .col-12 text-uppercase" id="aeropress-img">
+				
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+	--------------------------------------footer-----------------------------------------------------------
+	<div id="footer"></div>
+</body>
+</html>-->

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		#main-img{
+			background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('coffee/21.jpeg');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			width:100%;
+			height:70vh;
+		}
+		#first-h1{
+			margin-top:25vh;
+		}
+		.paragraph-text{
+			font-family: Arquitecta-Black;
+			font-size: 1rem;
+		}
+		#div1,#div2,#div3{
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+			width:100%;
+			height:60vh;
+			cursor: pointer;
+			margin-bottom:10vh;
+		}
+		#div1-img
+		{
+			background-size:cover;;
+			background-position: center;
+			width: 100%;
+			height:30vh;
+		}
+		#div2-img
+		{
+			background-size:cover;;
+			background-position: center;
+			width: 100%;
+			height:30vh;
+		}
+		#div3-img
+		{
+			background-size:cover;;
+			background-position: center;
+			width: 100%;
+			height:30vh;
+		}
+		#div1-img:hover{
+			overflow:hidden;
+			transform: scale(1.1);
+			transition:all 0.5s ease-in;
+		}
+		#div2-img:hover{
+			overflow:hidden;
+			transform: scale(1.1);
+			transition:all 0.5s ease-in;
+		}
+		#div3-img:hover{
+			overflow:hidden;
+			transform: scale(1.1);
+			transition:all 0.5s ease-in;
+		}
+		.text-style{
+			font-family: Arquitecta-Black;
+			font-size: 1rem;
+			border: none;
+			width:100%;
+			height:5vh;
+			border-bottom:1px solid white;
+			background-color:transparent;
+		}
+		input[placeholder]{
+			color:white;
+			font-family: Arquitecta-Black;
+			font-size:.6875rem;
+			text-transform: uppercase;
+		}
+		textarea[placeholder]{
+			color:white;
+			font-family: Arquitecta-Black;
+			font-size:.6875rem;
+			text-transform: uppercase;
+		}
+		#baddress{
+			height: 25vh;
+			border: 1px solid white;
+			border-top:none;
+		}
+		#cafeaddress{
+			height: 25vh;
+			border:1px solid white;
+			border-top:none;
+		}
+		#btype{
+			background-color: transparent;
+			color:gray;
+			font-family: Arquitecta-Black;
+			font-size:.6875rem;
+			text-transform: capitalize;
+		}
+		select[option]:hover{
+			background-color:white;
+			color:gray;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+		});
+
+		function register()
+		{
+			var name=document.getElementById("name").value;
+			var phone=document.getElementById("phone").value;
+			var email=document.getElementById("email").value;
+			var btype=document.getElementById("btype").value;
+			var baddress=document.getElementById("baddress").value;
+			var existingb=document.getElementById("existingb").value;
+			var days=document.getElementById("days").value;
+			var experince=document.getElementById("experince").value;
+			var staff=document.getElementById("staff").value;
+			var brand=document.getElementById("brand").value;
+			var weekly=document.getElementById("weekly").value;
+			var cafeaddress=document.getElementById("cafeaddress").value;
+			
+
+			if(name=="")
+			{
+				document.getElementById('name').focus();
+			}
+
+			else if(phone=="")
+			{
+				document.getElementById('phone').focus();
+			}
+
+			else if(email=="")
+			{
+				document.getElementById('email').focus();
+			}
+
+			else if(btype=="")
+			{
+				document.getElementById('btype').focus();
+			}
+
+			else if(baddress=="")
+			{
+				document.getElementById('baddress').focus();
+			}
+
+			else if(existingb=="")
+			{
+				document.getElementById('existingb').focus();
+			}
+
+			else if(days=="")
+			{
+				document.getElementById('days').focus();
+			}
+
+			else if(experince=="")
+			{
+				document.getElementById('experince').focus();
+			}
+
+			else if(staff=="")
+			{
+				document.getElementById('staff').focus();
+			}
+
+			else if(brand=="")
+			{
+				document.getElementById('brand').focus();
+			}
+
+			else if(weekly=="")
+			{
+				document.getElementById('weekly').focus();
+			}
+
+			else if(cafeaddress=="")
+			{
+				document.getElementById('cafeaddress').focus();
+			}
+
+		}
+	</script>
+	<!--***************----------------------------------head section-------------------------------->
+	<div id="header"></div>
+
+
+	<!-----------------------------------------------------------------------body section-------------------------------------->
+	<div class="container">
+		<div class="row">
+
+		<!----------------------------------------------------------------------------------------------------------------->	
+			<div class="col-sm-12 col-lg-12 .col-12 pb-lg-5 pb-sm-5 pb-5 mt-5" id="main-img">
+				<h1 class="text-white text-center text-uppercase"id="first-h1">A BUSINESS BUILT<br>ON PARTNERSHIPS</h1>
+			</div>
+
+			<div class="col-sm-3 col-lg-3 .col-12"></div>
+			<div class="col-sm-6 col-lg-6 .col-12 mt-5 text-justify">
+				<h3 class="text-center text-uppercase font-weight-bold">WE DON'T HAVE WHOLESALE ACCOUNTS WE HAVE PARTNERS.</h3>
+				<p class="paragraph-text"><i>Because we believe true partnership is what leads to success for all.</i></p>
+				<br>
+
+				<p class="paragraph-text">We pride ourselves on providing quality specialty coffee to espresso bars and cafes, but above all else it's the partnerships we make with businesses that we truly value. We want to partner with people who believe what we believe – that coffee has the power to do good.</p><br>
+
+				<p class="paragraph-text">Committing to a partnership is not something we take lightly, so we only partner with the right people. We look for partners with the same long-term focus and an uncompromising commitment to quality as we have – that is a non-negotiable for us.</p><br>
+
+				<p class="paragraph-text">We are proud of our consistency; this is why all our partners use the same espresso equipment as we do in our flagship cafes. We tenaciously defend quality, which is why we work closely with our partners and have regular assessments to ensure the same high quality standard is met each and every time.</p><br>
+
+				<p class="paragraph-text">Our partnerships go beyond the supply of quality coffee. We understand that our partner's success is our success, and that flows on to the success of our producing partners. So for us it's about helping our cafe partners with everything from in-depth barista training to business planning and expansion when the time comes. We expect a high standard, but don't shy away from helping achieve this standard. We believe partnership does really mean we have a shared responsibility to delivering amazing quality coffee that lives up to the Campos brand every time.</p>
+
+
+			</div>
+			<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+		<!---------------------------------------------------------------------------------------------------->
+			<div class="col-sm-3 col-lg-3 .col-12"></div>
+			<div class="col-sm-6 col-lg-6 .col-12 text-center text-justify text-uppercase">
+				<p style="border-bottom:8px solid orange;width:50%;margin-left:25%;" class="mt-5"></p>
+				<h2 class="pt-4 pb-5 text-warning font-weight-bold">what's it like<br>working with campos?  </h2>
+			</div>
+			<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+			<div class="col-sm-3 col-lg-3 .col-12 text-uppercase text-center text-gray-dark" id="div1">
+				<a href="blog.html"><img src="coffee/26.jpg" id="div1-img"></a>
+				<a href="blog.html"><h3 class="font-weight-bold pt-3">how to brew:<br>aeropress</h3></a>
+				<a href="blog.html"><p class="paragraph-text text-success p-3">brew guides</p></a>
+			</div>
+
+			<div class="col-sm-1 col-lg-1"></div>
+			
+			<div class="col-sm-3 col-lg-3 .col-12 text-uppercase text-center text-gray-dark" id="div2">
+				<a href="blog.html"><img src="coffee/25.jpg" id="div2-img"></a>
+				<a href="blog.html"><h3 class="font-weight-bold pt-3">how to brew:<br>cascara</h3></a>
+				<a href="blog.html"><p class="paragraph-text text-success pt-3">brew guides</p></a>
+			</div>
+
+			<div class="col-sm-1 col-lg-1"></div>
+
+			<div class="col-sm-3 col-lg-3 .col-12 text-uppercase text-center text-gray-dark" id="div2">
+				<a href="blog.html"><img src="coffee/27.jpg" id="div3-img"></a>
+				<a href="blog.html"><h3 class="font-weight-bold pt-3">how to brew:<br>chemex</h3></a>
+				<a href="blog.html"><p class="paragraph-text text-success pt-3">brew guides</p></a>
+			</div>
+		</div>
+	</div>	
+		<!-------------------form----------------------------------------------------------------------------------------->
+
+	<div class="container text-white text text-justify text-uppercase badge-dark">
+		<div class="row">
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+					
+				<div class="col-sm-6 col-lg-6 .col-12">
+					<p class="text-success paragraph-text mt-3 text-center">join us</p>
+					<h3 class="font-weight-bold mt-3 text-center">become a partner</h3>
+					<p class="text-lowercase paragraph-text">If you would like more information on our Campos Coffee partnerships, please get in touch. Please provide as much information as possible about your current or future cafe/espresso bar, as this will help speed up the process.</p>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 mt-4 text-uppercase">
+					<div class="row">
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="name" id="name" class="text-style" placeholder="NAME">
+						</div>
+
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="phone" id="phone" class="text-style" placeholder="PHONE">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>		
+				
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 mt-4 text-uppercase">
+					<input type="email" name="email" id="email" class="text-style" placeholder="EMAIL">
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<div class="row">
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<select name="btype" id="btype" class="text-style">
+								<option value="espresso bar">espresso bar</option>
+								<option value="cafe">cafe</option>
+								<option value="grocery">grocery</option>
+								<option value="office">office</option>
+								<option value="restaurant">restaurant</option>
+								<option value="other">other</option>
+							</select>
+						</div>
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="bname" id="bname" class="text-style" placeholder="BUSSINESS NAME">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<textarea class="text-style" id="baddress" name="baddress" placeholder="business address"></textarea>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<div class="row">
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="existingb" id="existingb" class="text-style" placeholder="is this exissting bussiness">
+						</div>
+
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="days" id="days" class="text-style" placeholder="trading days and hours">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<div class="row">
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="experince" id="experince" class="text-style" placeholder="years of industry experince">
+						</div>
+						<div class="col-sm-6 col-lg-6 .col-12">
+							<input type="text" name="staff" id="staff" class="text-style" placeholder="number of baristas on staff">
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<input type="text" name="brand" id="brand" class="text-style" placeholder="own your own espresso machine? if yes. what brand">
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<input type="text" name="weekly" id="weekly" class="text-style" placeholder="what is your weekly coffee usage (lbs)">
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-uppercase mt-4">
+					<textarea id="cafeaddress"class="text-style" name="cafeaddress" placeholder="ADDITIONAL IMFORMATION ABOUT YOUR CAFEOR BUSSINESS"></textarea>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 mt-4">
+					<p class="text-lowercase paragraph-text">Our goal is not to oversaturate the market. Hence we need to ensure your business does not encroach on existing customers’ territories, we will also want to conduct a site visit, and if it is a new business, see the concept and design plans. </p>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+
+
+
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+				<div class="col-sm-6 col-lg-6 .col-12 text-center mt-4">
+					<button type="button" class="btn btn-sm btn-dark btn-outline-light text-uppercase" onclick="register();">register interest</button>
+				</div>
+				<div class="col-sm-3 col-lg-3 .col-12"></div>
+
+		</div>
+
+	</div>
+	
+
+	<!------------------------------------------------------------------footer section------------------------------------------->
+
+	<div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0 auto;
+}
+
+.section
+{
+	background-attachment: fixed;
+}
+.img-responsive{
+
+	width:70px;
+	height:70px;
+}
+p
+{
+	font-family: Arquitecta-Black;
+	font-size: .6875rem;
+
+}
+h1
+{
+	font-family: Arquitecta-Black;
+}
+.social{
+	list-style: none;
+	text-decoration: none;
+}
+
+.social a
+{
+	font-family: Arquitecta-Black;
+	text-decoration: none;
+	font-size: .6875rem;
+	color:black;
+	padding: 5px 0px;
+}
+#social-first{
+	color:orange;
+}
+#social-first:hover{
+	color:white;
+	transition:all 0.5s ease-in;	
+}
+.social a:hover{
+	color:orange;
+	transition:all 0.5s ease-in;
+}
+
+
+/*************************************************************************footerlogo section*******************************************/
+.navbar
+{
+	font-family: Arquitecta-Black;
+	font-size: .6875rem;
+}
+.navbar a{
+	color:black;
+}
+.navbar a:hover{
+	color:orange;
+	border-bottom:1px solid orange;
+	transition:all 0.5s ease-in;
+}

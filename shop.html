@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+
+
+		#navbar-shop
+		{
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+			font-family: Arquitecta-Black;
+			font-size: .6875rem;
+			background-color: #8FBC8F;
+		}
+		
+		.paragraph-text{
+			font-family: Arquitecta-Black;
+			font-size: 1rem;
+		}
+		.product-item{
+			width:100%;
+			height:50vh;
+		}
+		.product-item:hover{
+			transform: scale(1.2);
+		}
+		
+
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#header").load("header.html");
+			$("#footer").load("footer.html");
+
+
+			$(".all-item").show();
+			$(".blend-item").hide();
+			$(".single-item").hide();
+
+			$("#all-btn").click(function(){
+				$(".all-item").show();
+				$(".blend-item").hide();
+				$(".single-item").hide();
+			});
+
+			$("#blend-btn").click(function(){
+				$(".blend-item").show();
+				$(".all-item").hide();
+				$(".single-item").hide();
+			});
+
+			$("#single-btn").click(function(){
+				$(".single-item").show();
+				$(".all-item").hide();
+				$(".blend-item").hide();
+			});
+
+
+
+		});
+	</script>
+
+<!--**************************header include****************************-->
+	<div id="header"></div>
+
+<!--**************************************************body part**************************-->
+
+	<div class="container">
+		<div class="row">
+					
+					<nav class="navbar navbar-expand-sm text-uppercase col-sm-12 col-lg-12 .col-12" id="navbar-shop">
+						<button class="navbar-toggler" data-target="#picon" data-toggle="collapse" ><i class="fa fa-bars" arial-hidden="true"></i></button>
+						<div class="collapse navbar-collapse navbar-right" id="picon">
+							<ul class="navbar-nav mx-5">
+								<li class="nav-item mx-5">
+									<a class="nav-link" href="#"  id="all-btn">all coffee</a>
+								</li>
+								<li class="nav-item mx-5">
+									<a class="nav-link" href="#"  id="blend-btn">blends</a>
+								</li>
+								<li class="nav-item mx-5">
+									<a class="nav-link" href="#"  id="single-btn">single origin</a>
+								</li>
+								<li class="nav-item mx-5">
+									<a class="nav-link" href="#"  id="">christmas coffee gift</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+	
+							
+					<!------------------------------------------------- all product-------------------------- -->
+	
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center mt-5 text-justify all-item">
+						<h2 class="font-weight-bold">QUALITY COFFEE CULTIVATED BY GOOD</h2><br>
+						<p class="paragraph-text"><i>Quality Coffee Cultivated by Good is the belief that coffee only tastes good when it's made ethically and with care. We ship to all states and have free shipping over $50.</i></p>
+					</div><br>
+					
+					
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">blade runner blend</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$16.75</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">campos superior blend</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$15.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">blade runner blend</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$16.75</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">dawn patrol</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$16.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">ethiopia banko gotiti</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$17.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">guatemala el patio</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$17.50</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">kenya highlands</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$19.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center all-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">mexico sierra mixteca</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$17.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-center text-uppercase all-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">nicaragua carlos lopex aaa</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$22.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+
+					
+
+
+				<!--------------------------------------------------- single blend--------------------------------------------------------->
+
+
+
+				<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center mt-5 text-justify blend-item">
+						<h2 class="font-weight-bold">Coffee Blends</h2><br>
+						<p class="paragraph-text"><i>We travel the globe to find exemplary beans to create the most consistent and delicious award-winning blends. We ship to all states and have free shipping over $50.</i></p>
+				</div><br>
+					
+					
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center blend-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">blade runner blend</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$16.75</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center blend-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">campos superior blend</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$15.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center blend-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">blade runner blend</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$16.75</button>
+							</figcaption>
+						</figure>
+					</div>
+
+				<!-- ---------------single origin----------------------------------------------------------------------------->
+
+					<div class="col-sm-12 col-lg-12 .col-12 text-uppercase text-center mt-5 text-justify single-item">
+						<h2 class="font-weight-bold">Single Origin Coffee</h2><br>
+						<p class="paragraph-text"><i>Our single origins are something truly special. Working with our local partners we are proud to bring you the best of what each region has to offer. We ship to 
+						all states and have free shipping over $50.</i></p>
+					</div><br>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center single-item">
+						<figure>
+							<img src="coffee/8.png" class="product-item">
+							<figcaption>
+								<p class="text-success">blends</p>
+								<h4 class="font-weight-bold">dawn patrol</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$16.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center single-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">ethiopia banko gotiti</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$17.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center single-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">guatemala el patio</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$17.50</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center single-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">kenya highlands</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$19.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-uppercase text-center single-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">mexico sierra mixteca</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$17.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+					<div class="col-sm-4 col-lg-4 .col-12 text-center text-uppercase single-item">
+						<figure>
+							<img src="coffee/18.jpeg" class="product-item">
+							<figcaption>
+								<p class="text-success">single origin</p>
+								<h4 class="font-weight-bold">nicaragua carlos lopex aaa</h4>
+								<button type="button" class="btn btn-info btn-sm btn-lg">$22.00</button>
+							</figcaption>
+						</figure>
+					</div>
+
+
+
+
+
+		</div><!-- row div close-->
+	</div><!-- container div close-->
+
+
+
+
+
+
+
+
+<!--************************************************************************************--->
+
+<!--********************************************footer include**************************************-->	
+	<div id="footer"></div>
+</body>
+</html>
